@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers - Content</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inknut Antiqua', serif;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    h1 {
+        color: #131515;
+        font-family: 'Joan', serif;
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 19.2px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    h2{
+        text-align: left;
+    }
+    p{
+        text-align: justify;
+        margin: 1.5em;
+    }
+    img{
+        max-width: 250px;
+    }
+    .logo-all{
+        margin-bottom: 10em;
+    }
+    footer {
+        position: absolute;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 0;
+    }
+    .logo-all{
+        margin-left: 35em;
+    }
+    .one{
+        padding: 0;
+        margin-left: -13em;
+        margin-bottom: -3em;
+        max-width:max-content;
+
+    }
+    .two{
+        padding: 0;
+        margin-bottom: -2em;
+        max-width:max-content;
+
+    }
+    .copyright{
+        margin-top: 20em;
+        margin-left: 32em;
+        margin-bottom: -38em;
+    }
+    /* Responsive for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 100px;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 2.5em;
+    align-items: center;
+  }
+
+  .social-links {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+    margin-left: 0;
+  }
+
+  .image-section,
+  .image-stack {
+    max-width: 80%;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .two{
+    display: none;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+  }
+
+  .card {
+    padding: 15px;
+    font-size: 14px;
+    justify-content: center;
+    margin-left: 13em;
+  }
+
+  .logo-all {
+    margin-left: 32em;
+    margin-right: auto;
+    display: block;
+    margin-top: 2em;
+  }
+  .copyright{
+    margin-left: auto;
+    font-size: 14px;
+  }
+}
+
+/* Responsive for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 48px; 
+        }
+    .card{
+        display: flex;
+        margin-left: auto;  
+    }
+    .card h2, p{
+        margin-top: 5em;
+        font-size: 10px;
+    }
+    .card img{
+        size: 20%;
+    }
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .logo-all {
+        margin-left: 14em;
+        margin-right: auto;
+    }
+    footer {
+        font-size: 12px; 
+    }
+    .copyright{
+        display: inline;
+        margin: 1em;
+    }
+    .one, .two{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="flowers.html"><h1>FLOWERS</h1></a>
+        <div class="grid">
+            <div class="card">
+                <img src="images/flowers/cherryblossomsite.webp" alt="Sakura Branch"/>
+                <h2>SAKURA BRANCH</h2>
+                <p>Thibaud's entry for time fitted with the season in Korea.</p>
+                <p>Price: ₱6,400.00</p>
+            </div>
+            <div class="card">
+                <img src="images/flowers/flowerbouquetsite.webp" alt="Bouquet"/>
+                <h2>BOUQUET</h2>
+                <p>Bouquet, Thibaud's entery for his solo exhibition: "Le Jardin Fantôme," introducing his new original work.</p>
+                <p>Price: ₱9,600.00</p>
+            </div>
+            <div class="card">
+                <img src="images/flowers/chrysanthemesite.webp" alt="Chrysantheme"/>
+                <h2>CHRYSANTHEME</h2>
+                <p>Chrysantheme, one of his original work seen for "Le Jardin Fantôme".</p>
+                <p>Price: ₱6,400.00</p>
+            </div>
+            <div class="card">
+                <img src="images/flowers/azaleesite.webp" alt="Azalee"/>
+                <h2>AZALEE</h2>
+                <p>Azalee, one of his original work seen in his exhibition "Le Jardin Fantôme".</p>
+                <p>Price: ₱6,400.00</p>
+            </div>
+            <div class="card">
+                <img src="images/flowers/sakuracardfinal2site.webp" alt="Sakura Card"/>
+                <h2>SAKURA CARD</h2>
+                <p>Sakura Card, an illustration that Thibaud Herem says love drawing flowers.</p>
+                <p>Price: ₱2,000.00</p>
+            </div>
+            <div class="card">
+                <img src="images/flowers/hydrangeasite.webp" alt="Hydrangea"/>
+                <h2>HYDRANGEA</h2>
+                <p>Hydrangea, as Thibaud says until the end of the year, when flowers are hard to find! Love, Peace and Draw.</p>
+                <p>Price: ₱6,400.00</p>
+            </div>
+        </div>
+        <img class="logo-all" src="images/logo-black.png"/>
+        <footer>
+            <p class="copyright">© Copyright 2024. All rights reserved. Shane Mendoza</p>
+            <img class="one" src="images/flowers/footerflower.png"/>
+            <img class="two" src="images/flowers/footerflower2.png"/>
+        </footer>
+    </div>
+</body>
+</html>

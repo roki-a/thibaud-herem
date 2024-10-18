@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree - Content</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inknut Antiqua', serif;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    h1 {
+        color: #131515;
+        font-family: 'Joan', serif;
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 19.2px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    h2{
+        text-align: left;
+    }
+    p{
+        text-align: justify;
+        margin: 1.5em;
+    }
+    img{
+        max-width: 250px;
+    }
+    footer {
+        position: absolute;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 0;
+    }
+    .logo-all{
+        margin-left: 35em;
+    }
+    .one{
+        padding: 0;
+        margin-left: -12em;
+        margin-bottom: -1em;
+        max-width: 350px;
+    }
+    .two{
+        padding: 0;
+        margin-left: 57.2em;
+        margin-bottom: -1em;
+        max-width: 500px;
+    }
+    .copyright{
+        margin-top: 20em;
+        margin-left: 32em;
+        margin-bottom: -44em;
+    }
+/* Responsive for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+        h1 {
+            font-size: 64px; 
+            justify-content: center;
+            text-align: center;
+            margin-left: 1em;
+        }
+        .grid {
+            grid-template-columns: repeat(2 ,1fr); 
+            justify-content: center;
+            margin-left: 0 auto;
+        }
+        .logo-all {
+            margin-left: 22em;
+            margin-right: auto; 
+        }
+        .one, .two{
+            display: none;
+        }
+        .copyright{
+            margin-left: 1em;
+        }
+    }
+
+    /* Responsive for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 48px;
+        text-align: center;
+        margin-left: 5em; 
+    }
+    .card{
+        display: flex;
+        margin-left: -8em;
+    }
+    .card h2, p{
+        font-size: 15px;
+        margin-left: 0.5em;
+        margin-top: 5em;
+    }
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 17em;
+    }
+    .logo-all {
+        margin-left: 15em;
+        margin-right: auto;
+    }
+    footer {
+        font-size: 12px; 
+    }
+    .copyright{
+        margin-left: 1em;
+        display: inline;
+    }
+    .two{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="tree.html"><h1>TREE</h1></a>
+        <div class="grid">
+            <div class="card">
+                <img src="images/tree/newredwood_2.webp" alt="New Redwood">
+                <h2>NEW REDWOOD</h2>
+                <p>New Redwood, captured with its impressively straight trunk and towering canopy, showcasing its immense height and enduring presence in ancient forests.</p>
+                <p>Price: ₱6,400.00</p>
+            </div>
+            <div class="card">
+                <img src="images/tree/sequoiasite.webp" alt="Giant Sequoia">
+                <h2>GIANN SEQUOIA</h2>
+                <p>Giant Sequoia, rendered in stunning detail, with its deeply furrowed bark and colossal scale reflecting its static as one of the world's largest trees.</p>
+                <p>Price: ₱6,400.00</p>
+            </div>
+            <div class="card">
+                <img src="images/tree/phanthomsite.webp" alt="Phantom">
+                <h2>PHANTOM</h2>
+                <p>Phantom, illustrated with a haunting, pale bark and delicate branches, evoking a sense of mystery and fragility in the natural world.</p>
+                <p>Price: ₱7,000.00</p>
+            </div>
+            <div class="card">
+                <img src="images/tree/NOHtreesite.webp" alt="Noh Theater Tree">
+                <h2>NOH THEATER TREE</h2>
+                <p>Noh Theater Tree, Japanese tradition, this iconic pine is depicted with its curved, sweeping branches annd textured bark, mirroring the serene, contemplative atmosphere of Noh Theater stages.</p>
+                <p>Price: ₱7,700.00</p>
+            </div>
+            <div class="card">
+                <img src="images/tree/littlepine1site.webp" alt="Little Pine 1">
+                <h2>LITTLE PINE 1</h2>
+                <p>Little Pine 1, drawn with its sparse but resilient needles and slender form, highlighting the beauty of growth and simplicity in nature.</p>
+                <p>Price: ₱3,200.00</p>
+            </div>
+            <div class="card">
+                <img src="images/tree/oaksite.jpg" alt="Royal Oak">
+                <h2>ROYAL OAK</h2>
+                <p>Royal Oak, regal and historic oak, illustrated with its sturdy trunk and expansive, intricate branches, symbolizing strength and heritage, befitting its name.</p>
+                <p>Price: ₱7,700.00</p>
+            </div>
+            <div class="card">
+                <img src="images/tree/koreanpinesite.webp" alt="South-Korean Pine">
+                <h2>SOUTH-KOREAN PINE</h2>
+                <p>South-Korean Pine, drawn with its long, slender needles and gracefully curving branches, capturing the elegance and resilience of South Korea's mountainous landscape.</p>
+                <p>Price: ₱6,400.00</p>
+            </div>
+        </div>
+        <img class="logo-all" src="images/logo-black.png"/>
+        <footer>
+            <p class="copyright">© Copyright 2024. All rights reserved. Shane Mendoza</p>
+            <img class="one" src="images/tree/footer1tree.png"/>
+            <img class="two" src="images/tree/footer2tree.png"/>
+        </footer>
+    </div>
+</body>
+</html>

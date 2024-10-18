@@ -1,0 +1,417 @@
+
+
+/* General styles for the body and container */
+/* INDEX */
+body {
+  margin: 0;
+  padding: 0;
+  /* width: 1440px; */
+  /* height: 1024px; */
+  font-family: 'Inknut Antiqua', serif;
+  background-color: #f7f7f7; 
+  color: #131515;
+  background-image: url(images/Random-static-1.png);
+}
+/* UNiVERSAL STYLING */
+*{
+  box-sizing: border-box;
+  line-height: normal;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  flex-shrink: 0;
+}
+.logo img{
+  display: flex;
+  width: 70px;
+  padding: 10px;
+  height: auto;
+  z-index: -1;
+}
+.container {
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styling */
+header {
+  display: block;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header h1 {
+  color: #131515;;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  flex-grow: 1;
+  text-decoration: none;
+}
+footer h2{
+  font-size: 200px;
+}
+
+/* Social links */
+.social-links {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: auto;
+  margin-left: 85em;
+  margin-top: -7em;
+}
+
+.social-links a img {
+  width: 25px;
+  height: auto;
+  margin-top: 0;
+}
+
+/* Main image section */
+.image-section {
+  display: flex;
+  justify-content: center;
+}
+.image-stack{
+  justify-content: center;
+  margin-left: 38em;
+  max-width: 235px;
+}
+
+.main-image {
+  max-width: 330px;
+  align-content: center;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+footer h2 {
+  color: rgba(23, 71, 62, 0.54);
+  font-family: 'Joan', serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  font-size: 170px;
+}
+
+/* ALL */
+a{
+  text-decoration: none;
+}
+.all {
+  max-width: 600px; /* Set a max width for the container */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items in the flex container */
+  gap: 10px; /* Space between images */
+  }
+
+.overlap-group-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Controls the spacing between the images */
+}
+/* Images row */
+.misce {
+  width: 420px;
+  animation: moveMisce 4000ms cubic-bezier(0.3, -0.05, 0.7, -0.5) 1ms forwards;
+} 
+.bunjae {
+  width: 250px;
+  animation: moveBunjae 4000ms cubic-bezier(0.3, -0.05, 0.7, -0.5) 1ms forwards;
+}
+.tree {
+  width: 260px;
+  animation: moveTree 4000ms cubic-bezier(0.3, -0.05, 0.7, -0.5) 1ms forwards;
+}
+.flowers {
+  width: 300px;
+  animation: moveFlower 4000ms cubic-bezier(0.3, -0.05, 0.7, -0.5) 1ms forwards;
+}
+.arki {
+  width: 220px;
+  animation: moveArki 4000ms cubic-bezier(0.3, -0.05, 0.7, -0.5) 1ms forwards;
+}
+
+
+/* motion in all */
+@keyframes moveArki {
+  0% {
+    transform: translateX(0);
+    opacity: 0.5; 
+  }
+  50% {
+    transform: translateX(20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-700px); 
+  }
+}
+@keyframes moveFlower {
+  0% {
+    transform: translateX(0); 
+    opacity: 0.5; 
+  }
+  50% {
+    transform: translateX(20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-420px); 
+  }
+}
+@keyframes moveTree {
+  0% {
+    transform: translateX(0); 
+    opacity: 0.5; 
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-150px); 
+  }
+}
+@keyframes moveBunjae {
+  0% {
+    transform: translateX(0); 
+    opacity: 0.5; 
+  }
+  50% {
+    transform: translateX(-20px); 
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(170px); 
+  }
+}
+@keyframes moveMisce {
+  0% {
+    transform: translateX(0); 
+    opacity: 0.5; 
+  }
+  50% {
+    transform: translateX(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(500px); 
+  }
+}
+@keyframes img{
+  0%{
+  transform: transform(0);
+  }
+  100%{
+    transform: translate(100px);
+  }
+}
+
+
+/* ARCHITECTURE, FLOWERS, TREE, BUNAJE, & MISCELLANEOUS*/ 
+/* Image Stack */
+.image-stack {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+}
+
+.stack-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.main-image {
+  z-index: 10;
+}
+
+.rotated-left {
+  transform: rotate(-10deg);
+  z-index: 5;
+  left: -20px;
+}
+
+.rotated-right {
+  transform: rotate(10deg);
+  z-index: 5;
+  right: -20px;
+}
+
+/* Navigation */
+.nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration:none;
+  color:#F8FCFB;
+}
+
+.prev,
+.next {
+  font-family: 'Joan', serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration:none;
+  color:#264e45;
+  text-transform: uppercase;
+}
+.prev:hover{
+  text-decoration:none;
+  color: #C084D6;
+}
+.next:hover{
+  text-decoration:none;
+  color: #C084D6;
+}
+.prev::before {
+  text-decoration: none;
+}
+
+.next::after {
+  text-decoration: none;
+}
+/* motion */
+.fade-out{
+  opacity: 0;
+}
+
+
+/* Arki all */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background-color: #F8FCFB;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.bg{
+  max-width: 5em;
+  margin-left: 50px;
+}
+.logo-all{
+  max-width: 6em;
+  display: flex;
+  margin-left: 35em;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+/* FLOWERS */
+.petals{
+  display: flex;
+  z-index: 1;
+}
+
+/* Responsive for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+    justify-content: center;
+  }
+
+  .social-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .image-section,
+  .image-stack {
+    max-width: 50%;
+    justify-content: center;
+    margin: auto;
+    margin-left: 15em;
+  }
+
+  footer h2 {
+    font-size: 85px;
+    margin-top: .5em;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Switch to a single column for cards */
+  }
+}
+
+/* Responsive for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+    justify-content: center;
+  }
+
+  .social-links {
+    max-width: 20%;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1em;
+    margin-left: auto;
+  }
+
+  .image-section,
+  .image-stack {
+    max-width: 40%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: 7em;
+  }
+
+  footer h2 {
+    font-size: 50px;
+    justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .all {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .prev,
+  .next {
+    font-size: 14px;
+    margin: 0 auto;
+  }
+}
